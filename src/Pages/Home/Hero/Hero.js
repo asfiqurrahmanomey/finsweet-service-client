@@ -1,51 +1,34 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
+import icon from '../../../assets/icons/Icons Combine 1.png'
+import "./Hero.css"
 const Hero = () => {
     return (
         <div>
-            <div class="container flex flex-col px-6 py-10 mx-auto space-y-6 lg:h-[32rem] lg:py-16 lg:flex-row lg:items-center">
-                <div class="w-full lg:w-1/2">
-                    <div class="lg:max-w-lg">
-                        <h1 class="text-3xl font-semibold tracking-wide text-gray-800 dark:text-white lg:text-4xl">
-                            Easiest way to create your website
-                        </h1>
+            <header class="bg-white dark:bg-gray-900">
+                <div class="container px-6 py-16 mx-auto">
+                    <div class="items-center lg:flex">
+                        <div class="w-full lg:w-1/2">
+                            <div class="lg:max-w-lg">
+                                <h1 class="text-3xl text-gray-800 dark:text-white lg:text-7xl font-extrabold">Become The Hero <br /> Of Your Own Story</h1>
 
-                        <div class="mt-8 space-y-5">
-                            <p class="flex items-center -mx-2 text-gray-700 dark:text-gray-200">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-2 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
+                                <p class="mt-3 text-gray-600 dark:text-gray-400">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed <br /> diam nonumy eirmod tempor invidunt ut labore et dolore <br /> magna aliquyam erat.</p>
 
-                                <span class="mx-2">Clean and Simple Layout</span>
-                            </p>
+                                <div class="flex flex-col mt-6 space-y-3 lg:space-y-0 lg:flex-row">
+                                    <input id="email" type="text" class="subscribe-input bg-indigo-100" placeholder="Enter Your Email Id" />
+                                    <button class="subscribe-button px-5 py-2 mt-0 text-sm tracking-wider text-white transition-colors duration-300 transform bg-indigo-700  lg:w-auto lg:mx-4 hover:bg-blue-500 focus:outline-none focus:bg-blue-500">
+                                        Subscribe
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
 
-                            <p class="flex items-center -mx-2 text-gray-700 dark:text-gray-200">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-2 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-
-                                <span class="mx-2">Just Copy Paste Codeing</span>
-                            </p>
-
-                            <p class="flex items-center -mx-2 text-gray-700 dark:text-gray-200">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-2 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-
-                                <span class="mx-2">Easy to Use</span>
-                            </p>
+                        <div class="flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2">
+                            <img class="w-full h-full max-w-md" src={icon} alt="email illustration vector art" />
                         </div>
                     </div>
-
-                    <div class="w-full mt-8 bg-transparent border rounded-md lg:max-w-sm dark:border-gray-700 focus-within:border-blue-400 focus-within:ring focus-within:ring-blue-300 dark:focus-within:border-blue-400 focus-within:ring-opacity-40">
-
-                    </div>
                 </div>
-
-                <div class="flex items-center justify-center w-full h-96 lg:w-1/2">
-                    <img class="object-cover w-full h-full mx-auto rounded-md lg:max-w-2xl" src="https://images.unsplash.com/photo-1543269664-7eef42226a21?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="glasses photo"/>
-                </div>
-            </div>
+            </header>
         </div>
     );
 };

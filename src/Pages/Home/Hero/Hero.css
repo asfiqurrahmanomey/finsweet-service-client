@@ -1,0 +1,11 @@
+.subscribe-input {
+    border: none;
+    height: 40px;
+    margin-top: 12px;
+}
+
+input::placeholder {
+    font-weight: normal;
+    opacity: 0.5;
+    color: gray;
+}
